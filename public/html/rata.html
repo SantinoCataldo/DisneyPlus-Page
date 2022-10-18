@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+
+<body>
+    <header>
+        <div class="icono">
+        </div>
+        <div class="form">
+            <div class="ingreso">
+                <a>volver</a>
+            </div>
+        </div>
+    </header>
+    <section class="loader-cont"><div class="loader"></div></section>
+    <section class="loader-cierre"></section>
+    <div class="interfaz"></div>
+    <section class="rata">
+        <div class="info">
+            <img src="../img/pelis/ratLogo.jpg" alt="">
+            <h4>2007 | 1h 51min | <b>0+</b> | Familiar</h4>
+            <p>En uno de los mejores restaurantes de París, Remy, una rata joven y decidida, sueña con convertirse en un
+                renombrado chef francés, poniendo en marcha una divertidísima cadena de eventos.</p>
+            <div class="botones">
+                <div><span class="boton sonido">canción</span></div>
+                <div><span id="abrir">pelicula</span></div>
+            </div>
+        </div>
+        <div class="trailer">
+            <iframe id="loaderPlay" src="https://players.repelishd.me/embed/tmdb/2062" allowfullscreen="" scrolling="no" frameborder="0"></iframe>
+            <img src="../img/xmark-solid.svg" id="cerrar" alt="">
+          </div>
+        </section>
+    </section>
+
+    <script>
+        let sonido = document.querySelector(".sonido");
+
+        sonido.addEventListener("click", () => {
+            let etiquetaAudio = document.createElement("audio");
+            etiquetaAudio.setAttribute("src", "../img/pelis/Lefestín.mp3");
+            etiquetaAudio.play();
+            etiquetaAudio.volume = 0.2;
+        })
+    </script>
+    <script src="../js/funcion.js"></script>
+</body>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="resources/img/favicon.ico">
+    <link rel="stylesheet" href="resources/css/style5.css?1.4">
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <style>
+        .carrusel .swiper-slide {
+            width: 1220px;
+        }
+
+        .peli .swiper-slide {
+            width: 306px;
+        }
+
+        @media only screen and (max-width:870px) {
+
+            .carrusel .swiper-slide {
+                width: 400px;
+            }
+
+            .peli .swiper-slide {
+                width: 180px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href=""><img src="resources/img/logo.jpg" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="#">
+                        <span class="icons"><svg alt="home" viewBox="0 0 36 36">
+                                <path d="M26.882 19.414v10.454h-5.974v-5.227h-5.974v5.227H8.961V19.414H5.227L17.921 6.72l12.694 12.694h-3.733z">
+                                </path>
+                            </svg></span>
+                        <p>inicio</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="icons"><svg alt="search" viewBox="0 0 36 36">
+                                <path d="M21.866 24.337c-3.933 2.762-9.398 2.386-12.914-1.13-3.936-3.936-3.936-10.318 0-14.255 3.937-3.936 10.32-3.936 14.256 0 3.327 3.327 3.842 8.402 1.545 12.27l4.56 4.558a2 2 0 0 1 0 2.829l-.174.173a2 2 0 0 1-2.828 0l-4.445-4.445zm-5.786-1.36a6.897 6.897 0 1 0 0-13.794 6.897 6.897 0 0 0 0 13.794z">
+                                </path>
+                            </svg></span>
+                        <p>búsqueda</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="icons"><svg alt="plus" viewBox="0 0 36 36">
+                                <path d="M27.85 15.1H20.9V8.15a2.9 2.9 0 0 0-5.8 0v6.95H8.15a2.9 2.9 0 0 0 0 5.8h6.95v6.95a2.9 2.9 0 0 0 5.8 0V20.9h6.95a2.9 2.9 0 1 0 0-5.8z">
+                                </path>
+                            </svg></span>
+                        <p>mi lista</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="icons"><svg alt="star" viewBox="0 0 36 36">
+                                <path d="M17.625 26.028L10.44 30l1.373-8.412L6 15.631l8.033-1.228 3.592-7.653 3.592 7.653 8.033 1.228-5.813 5.957L24.81 30z">
+                                </path>
+                            </svg></span>
+                        <p>originales</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="icons"><svg alt="film" viewBox="0 0 36 36">
+                                <path d="M24.71 20.07a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m-12.262 0a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m6.173-10.31a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m0 12.262a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m-1.544-4.629a.846.846 0 1 0-1.197 1.196.846.846 0 0 0 1.197-1.196m18.06-.644c-3.33 6.913-8.165 9.928-11.635 11.24-2.57.971-4.762 1.178-5.949 1.208-.348.032-.698.053-1.052.053C10.287 29.25 5.25 24.213 5.25 18S10.287 6.75 16.5 6.75c6.214 0 11.25 5.037 11.25 11.25a11.19 11.19 0 0 1-2.493 7.054c2.832-1.612 5.844-4.382 8.138-9.143a.968.968 0 0 1 1.742.838">
+                                </path>
+                            </svg></span>
+                        <p>películas</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="icons"><svg alt="serie" viewBox="0 0 36 36">
+                                <path d="M18.84 11.965h6.722a4 4 0 0 1 4 4V26a4 4 0 0 1-4 4H10.375a4 4 0 0 1-4-4V15.965a4 4 0 0 1 4-4h6.211l-3.981-3.981a1.162 1.162 0 1 1 1.643-1.644l3.465 3.465 3.464-3.465a1.162 1.162 0 0 1 1.644 1.644l-3.982 3.981zm6.428 7.73a1.718 1.718 0 1 0 0-3.436 1.718 1.718 0 0 0 0 3.436zm0 6.011a1.718 1.718 0 1 0 0-3.435 1.718 1.718 0 0 0 0 3.435z">
+                                </path>
+                            </svg></span>
+                        <p>series</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="perfil">
+            <div class="perfil-select">
+                <p class="nom-perfil">Usuario</p>
+                <img class="avatar" src="resources/img/user.jpg" alt="">
+            </div>
+            <div class="perfil-nav">
+                <a href="">
+                    <p>Cerrar sesión</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="loader-cont">
+        <div class="loader"></div>
+    </section>
+    <section class="loader-cierre"></section>
+    <section class="carrusel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <div class="carrusel_cont">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </section>
+    <section class="franquicias">
+        <div class="franquicias-cont">
+            <img src="resources/img/disney/disney-txt.png" class="franquicia-img">
+            <img src="resources/img/disney/disney.gif" class="franquicia-img hover-img">
+        </div>
+        <div class="franquicias-cont">
+            <img src="resources/img/disney/pixar-txt.png" class="franquicia-img">
+            <img src="resources/img/disney/pixar.gif" class="franquicia-img hover-img">
+        </div>
+        <div class="franquicias-cont">
+            <img src="resources/img/disney/marvel-txt.png" class="franquicia-img">
+            <img src="resources/img/disney/marvel.gif" class="franquicia-img hover-img">
+        </div>
+        <div class="franquicias-cont">
+            <img src="resources/img/disney/star-txt.png" class="franquicia-img">
+            <img src="resources/img/disney/starwars (1).gif" class="franquicia-img hover-img">
+        </div>
+        <div class="franquicias-cont">
+            <img src="resources/img/disney/national-txt.png" class="franquicia-img">
+            <img src="resources/img/disney/national.gif" class="franquicia-img hover-img">
+        </div>
+    </section>
+    <h3 class="h3">Recomendaciones para ti</h3>
+    <section class="peli">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/rata.html">
+                            <img src="resources/img/peli1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/dino.html">
+                            <img src="resources/img/peli2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/oso.html">
+                            <img src="resources/img/peli3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/cusco.html">
+                            <img src="resources/img/peli4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/goo.html">
+                            <img src="resources/img/peli5.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/tod.html">
+                            <img src="resources/img/peli6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <p>mas historias<br>proximamente</p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </section>
+    <h3 class="h3">Novedades en Disney+</h3>
+    <section class="peli">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/bolt.html">
+                            <img src="resources/img/peli7.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/rio.html">
+                            <img src="resources/img/peli8.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/ala.html">
+                            <img src="resources/img//peli9.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/rey.html">
+                            <img src="resources/img/peli10.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/lil.html">
+                            <img src="resources/img/peli11.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <a href="html/pla.html">
+                            <img src="resources/img/peli12.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartas">
+                        <p>mas historias<br>proximamente</p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </section>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                stretch: 0,
+                depth: 0,
+                modifier: 0,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="resources/js/disney.js"></script>
+</body>
+
+</html>

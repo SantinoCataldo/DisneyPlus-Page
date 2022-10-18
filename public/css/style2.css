@@ -1,0 +1,342 @@
+@font-face {
+    font-family: disney;
+    src: url(../letra/avenir_roman_12.woff);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #040714;
+    font-family: disney;
+    box-sizing: border-box;
+}
+
+.loader-cierre {
+    position: fixed;
+    top: -100vh;
+    z-index: 100;
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+.loader-cierre.active {
+    transform: translateY(100vh);
+}
+
+.loader-cont {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    animation: 1s bajada ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bajada {
+    0% {}
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.loader-cont .loader {
+    height: 50px;
+    width: 50px;
+    background: url(../img/loader2.jpg);
+    background-size: cover;
+    animation: 1s loader linear;
+    animation-iteration-count: 5;
+}
+
+@keyframes loader {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 15;
+    transition: 1s;
+}
+
+header .form {
+    display: flex;
+}
+
+header .icono img {
+    height: 43px;
+    margin-left: 54px;
+}
+
+header a {
+    font-weight: 100;
+    letter-spacing: 2px;
+
+}
+
+header .ingreso {
+    border: 1px solid #f9f9f9;
+    margin-right: 45px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 15;
+    color: #f9f9f9;
+    font-size: 18px;
+    padding: 13px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #040714c7;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+header .ingreso:hover {
+    background: #f9f9f9;
+    color: #040714;
+    transform: scale(1.03);
+}
+
+header .ingreso:active {
+    background: #c0c0c0;
+}
+
+/*FONODS*/
+
+.cusco {
+    background: url(../img/pelis/cuscoFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.rata {
+    background: url(../img/pelis/ratFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.dino {
+    background: url(../img/pelis/dinFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.oso {
+    background: url(../img/pelis/osoFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.goo {
+    background: url(../img/pelis/gooFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.tod {
+    background: url(../img/pelis/todFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.bolt {
+    background: url(../img/pelis/boltFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.rio {
+    background: url(../img/pelis/rioFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.ala {
+    background: url(../img/pelis/alaFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.rey {
+    background: url(../img/pelis/reyFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.lil {
+    background: url(../img/pelis/lilFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+.pla {
+    background: url(../img/pelis/plaFondo.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #f9f9f9;
+}
+
+/*--------*/
+
+.interfaz {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(4, 7, 20, 1) 0%, transparent 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    transition: .8s;
+    transition-delay: .8s;
+    z-index: 1;
+}
+
+.info {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    position: relative;
+    margin-left: 50px;
+}
+
+.info img {
+    margin-bottom: 30px;
+    height: 190px;
+    position: relative;
+}
+
+.info h4 {
+    color: silver;
+    text-align: center;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.info b {
+    color: #f9f9f9;
+    text-align: center;
+    background: #0063e5;
+    padding: 4px;
+    border-radius: 3px;
+    display: inline;
+}
+
+.info p {
+    font-size: 17px;
+    width: 40%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.info span {
+    color: #f9f9f9;
+    text-transform: uppercase;
+    border: 1px solid #f9f9f9;
+    backdrop-filter: blur(20px);
+    background: rgba(4, 7, 20, 0.4);
+    padding: 15px 17px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    width: 40%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+    transition: .3s;
+}
+
+.info span:hover {
+    background: #f9f9f9;
+    color: #000;
+}
+
+.info .botones {
+    display: flex;
+}
+
+.info .botones div span {
+    margin: 0 5px;
+}
+
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer iframe {
+    width: 1060px;
+    height: 515px;
+    outline: none;
+}
+
+.trailer img {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    top: 20px;
+    color: #f9f9f9;
+    height: 60px;
+}
