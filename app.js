@@ -37,21 +37,70 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/login', (req, res) => {
+app.get('/Login', (req, res) => {
     res.render('login');
 });
 
-app.get('/disney', (req, res) => {
+app.get('/Disney', (req, res) => {
     res.render('disney');
 });
 
-app.get('/register', (req, res) => {
+app.get('/Register', (req, res) => {
     res.render('register');
 });
 
 app.listen(3000, (req, res)=>{
     console.log('fiumbaa');
 });
+
+app.get('/Aladin', (req, res) => {
+    res.render('html/ala');
+});
+
+app.get('/Bolt', (req, res) => {
+    res.render('html/bolt');
+});
+
+app.get('/Cusco', (req, res) => {
+    res.render('html/cusco');
+});
+
+app.get('/Dinosaurio', (req, res) => {
+    res.render('html/dino');
+});
+
+app.get('/Goofy', (req, res) => {
+    res.render('html/goo');
+});
+
+app.get('/LiloYStitch', (req, res) => {
+    res.render('html/rey');
+});
+
+app.get('/TierraDeOsos', (req, res) => {
+    res.render('html/oso');
+});
+
+app.get('/PlanetaDelTesoro', (req, res) => {
+    res.render('html/pla');
+});
+
+app.get('/Rata', (req, res) => {
+    res.render('html/rata');
+});
+
+app.get('/ReyLeon', (req, res) => {
+    res.render('html/rey');
+});
+
+app.get('/Rio', (req, res) => {
+    res.render('html/rio');
+});
+
+app.get('/ZorroYSabueso', (req, res) => {
+    res.render('html/tod');
+});
+
 
 // Registro //
 

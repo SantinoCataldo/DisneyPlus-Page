@@ -6,7 +6,7 @@ for (let i = 0; i < sus.length; i++) {
     const cerrar = document.querySelector('.loader-cierre');
     cerrar.classList.toggle('active');
     setTimeout(function(){ 
-      window.location.href = "/register";
+      window.location.href = "/Register";
 }, 500);
   });
 }
@@ -15,7 +15,7 @@ sesion.addEventListener("click", function() {
   const cerrar = document.querySelector('.loader-cierre');
   cerrar.classList.toggle('active');
   setTimeout(function(){ 
-    window.location.href = "/login";
+    window.location.href = "/Login";
 }, 500);
 });
 

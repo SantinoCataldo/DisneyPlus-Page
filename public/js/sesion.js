@@ -15,6 +15,6 @@ sus.addEventListener("click", function() {
     const cerrar = document.querySelector('.loader-cierre');
     cerrar.classList.toggle('active');
     setTimeout(function(){ 
-      window.location.href = "/register";
+      window.location.href = "/Register";
   }, 500);
   });

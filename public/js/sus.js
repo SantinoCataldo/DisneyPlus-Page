@@ -16,7 +16,7 @@ sesion.addEventListener("click", function() {
   const cerrar = document.querySelector('.loader-cierre');
   cerrar.classList.toggle('active');
   setTimeout(function(){ 
-    window.location.href = "/login";
+    window.location.href = "/Login";
 }, 500);
 });
 

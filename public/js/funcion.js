@@ -13,7 +13,7 @@ function cerrarInicio() {
     const cerrar = document.querySelector('.loader-cierre');
     cerrar.classList.toggle('active');
     setTimeout(function(){ 
-      window.location.href = "/disney";
+      window.location.href = "/Disney";
 }, 500);
 }
 
