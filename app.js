@@ -58,6 +58,7 @@ app.listen(3000, (req, res)=>{
 app.post('/register', async (req, res)=>{
     const id_mail = req.body.email;
     const contraseña = req.body.contraseña;
+    console.log(req.body.contraseña);
     let contraseñaHaash = await bcryptsjs.hash(contraseña, 8);
     connection.query('INSERT INTO personas SET ?', {id_mail:id_mail, contraseña:contraseñaHaash}, async(error, results)=>{
         if(error){
