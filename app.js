@@ -30,7 +30,7 @@ app.use(session({
 }));
 
 //BD//
-const connection = require('./db/db');
+// const connection = require('./db/db');
 
 //Rutas//
 app.get('/', (req, res) => {
@@ -58,14 +58,14 @@ app.listen(3000, (req, res)=>{
 app.post('/register', async (req, res)=>{
     const id_mail = req.body.email;
     const contraseña = req.body.contraseña;
-    let contraseñaHaash = await bcryptsjs.hash(contraseña, 8);
-    connection.query('INSERT INTO personas SET ?', {id_mail:id_mail, contraseña:contraseñaHaash}, async(error, results)=>{
-        if(error){
-            console.log(error);
-        }else {
-            res.redirect('/');
-        }
-    });
+    // let contraseñaHaash = await bcryptsjs.hash(contraseña, 8);
+    // connection.query('INSERT INTO personas SET ?', {id_mail:id_mail, contraseña:contraseñaHaash}, async(error, results)=>{
+    //     if(error){
+    //         console.log(error);
+    //     }else {
+    //         res.redirect('/');
+    //     }
+    // });
 });
 
 //login//
@@ -73,19 +73,19 @@ app.post('/register', async (req, res)=>{
 app.post('/login', async (req, res)=>{
     const id_mail = req.body.email;
     const contraseña = req.body.contraseña;
-    let contraseñaHaash = await bcryptsjs.hash(contraseña, 8);
-    if(id_mail && contraseña){
-        connection.query('SELECT * FROM personas WHERE id_mail = ?', [id_mail] , async(error, results)=>{
-            if(results.length == 0 || ! (await bcryptsjs.compare(contraseña, results[0].contraseña))){
-                res.redirect('/login');
-                console.log(results);
-                console.log(contraseña)
-            }
-            else {
-                res.redirect('/disney');
-                console.log(results);
-                console.log(contraseña)
-            }
-        })
-    }
+    // let contraseñaHaash = await bcryptsjs.hash(contraseña, 8);
+    // if(id_mail && contraseña){
+    //     connection.query('SELECT * FROM personas WHERE id_mail = ?', [id_mail] , async(error, results)=>{
+    //         if(results.length == 0 || ! (await bcryptsjs.compare(contraseña, results[0].contraseña))){
+    //             res.redirect('/login');
+    //             console.log(results);
+    //             console.log(contraseña)
+    //         }
+    //         else {
+    //             res.redirect('/disney');
+    //             console.log(results);
+    //             console.log(contraseña)
+    //         }
+    //     })
+    // }
 })
